@@ -4,8 +4,8 @@ const USERS = [
     { username: "luwe", password: "stream", expiresAt: new Date("2025-09-29") }
 ];
 
-const MAX_ATTEMPTS = 3;
-const BLOCK_HOURS = 24;
+const MAX_ATTEMPTS = 5;
+const BLOCK_HOURS = 0;
 
 // ========== LOGIN ==========
 document.getElementById("loginForm").addEventListener("submit", function (e) {
