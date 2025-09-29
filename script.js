@@ -1,11 +1,12 @@
 // ========== USUARIOS AUTORIZADOS ==========
 const USERS = [
     { username: "admin", password: "1234", expiresAt: new Date("2025-11-30") },
+    { username: "joel", password: "1234567", expiresAt: new Date("2025-09-28") },
     { username: "luwe", password: "stream", expiresAt: new Date("2025-09-29") }
 ];
 
-const MAX_ATTEMPTS = 10;
-const BLOCK_HOURS = 0;
+const MAX_ATTEMPTS = 100;
+const BLOCK_HOURS = 24;
 
 // ========== LOGIN ==========
 document.getElementById("loginForm").addEventListener("submit", function (e) {
