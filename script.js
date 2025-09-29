@@ -37,7 +37,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
             loginData.blockedUntil = new Date(now.getTime() + BLOCK_HOURS * 60 * 60 * 1000).toISOString();
             message.textContent = "Has escrito datos incorrectos muchas veces. Vuelve a intentarlo en 24 horas.";
         } else {
-            message.textContent = "Datos incorrectos. Vuelve a intentarlo.";
+            message.textContent = "Datos incorrectos. Por favor vuelve a intentarlo.";
         }
         localStorage.setItem(storageKey, JSON.stringify(loginData));
         return;
@@ -45,7 +45,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 
     // Validar expiración
     if (now > new Date(user.expiresAt)) {
-        message.textContent = "Tu cuenta ha expirado.";
+        message.textContent = "Tu cuenta ha expirado contacta al desarrollador web para renovar.";
         return;
     }
 
