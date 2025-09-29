@@ -26,7 +26,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 
     // Si está bloqueado
     if (loginData.blockedUntil && now < new Date(loginData.blockedUntil)) {
-        message.textContent = "Has escrito datos incorrectos 3 veces. Vuelve a intentarlo en 24 horas.";
+        message.textContent = "Has escrito datos incorrectos muchas veces. Vuelve a intentarlo en 24 horas.";
         return;
     }
 
@@ -35,7 +35,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
         loginData.attempts += 1;
         if (loginData.attempts >= MAX_ATTEMPTS) {
             loginData.blockedUntil = new Date(now.getTime() + BLOCK_HOURS * 60 * 60 * 1000).toISOString();
-            message.textContent = "Has escrito datos incorrectos 3 veces. Vuelve a intentarlo en 24 horas.";
+            message.textContent = "Has escrito datos incorrectos muchas veces. Vuelve a intentarlo en 24 horas.";
         } else {
             message.textContent = "Datos incorrectos. Vuelve a intentarlo.";
         }
