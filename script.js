@@ -1,11 +1,11 @@
 // ========== USUARIOS AUTORIZADOS ==========
 const USERS = [
-    { username: "admin", password: "1234", expiresAt: new Date("2025-11-30") },
+    { username: "lord", password: "1111", expiresAt: new Date("2025-11-28") },
     { username: "joel", password: "1234567", expiresAt: new Date("2025-10-29") },
-    { username: "luwe", password: "stream", expiresAt: new Date("2025-09-29") }
+    { username: "luis", password: "stream", expiresAt: new Date("2025-09-29") }
 ];
 
-const MAX_ATTEMPTS = 100;
+const MAX_ATTEMPTS = 300000;
 const BLOCK_HOURS = 24;
 
 // ========== LOGIN ==========
@@ -45,7 +45,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 
     // Validar expiración
     if (now > new Date(user.expiresAt)) {
-        message.textContent = "Tu cuenta ha expirado contacta al desarrollador web para renovar.";
+        message.textContent = "Tu usuario ha vencido, contacta al desarrollador web para renovar tu servicio.";
         return;
     }
 
