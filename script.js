@@ -3,7 +3,6 @@ const USERS = [
     { username: "codigos", password: "3602", expiresAt: new Date("2026-03-03") },
     { username: "usuario448", password: "4448", expiresAt: new Date("2026-03-12") },
     { username: "code897", password: "acces2026", expiresAt: new Date("2026-03-16") },
-    { username: "exagono", password: "4108", expiresAt: new Date("2025-12-01") },
     { username: "Diego1", password: "6235", expiresAt: new Date("2026-03-18") },
     { username: "camilo2", password: "1223", expiresAt: new Date("2026-01-23") },
     { username: "anaaa", password: "1111", expiresAt: new Date("2026-02-07") },
