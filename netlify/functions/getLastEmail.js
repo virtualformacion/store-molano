@@ -47,7 +47,6 @@ exports.handler = async (event) => {
       "amazon.com: Intento de inicio de sesión",
       "Netflix: Tu código de inicio de sesión",
       "Netflix: Tu código de inicio de sesión",
-      "Fw: Netflix: Tu código de inicio de sesión",
       "Your one-time passcode for Disney+", 
       "Tu clave de un solo uso para Disney+",
       "Tu código de acceso único para Disney+" // Asunto específico de Disney+
@@ -96,12 +95,6 @@ exports.handler = async (event) => {
       "Tu código de acceso temporal de Netflix",
       "Completa tu solicitud de cambio de contraseña",
       "Completa tu solicitud de restablecimiento de contraseña"
-      "Fw: Importante: Cómo actualizar tu Hogar con Netflix",
-      "Fw: Importante: Cómo cambiar tu Hogar con Netflix",
-      "Fw: Tu código de acceso temporal de Netflix", 
-      "Fw: Tu código de acceso temporal de Netflix",
-      "Fw: Completa tu solicitud de cambio de contraseña",
-      "Fw: Completa tu solicitud de restablecimiento de contraseña"
     ];
 
     const validLinks = [
