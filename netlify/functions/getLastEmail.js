@@ -47,7 +47,6 @@ exports.handler = async (event) => {
       "amazon.com: Intento de inicio de sesión",
       "Este código vence en 15 minutos",
       "Caduca en 15 min",
-      "Código de verificación. Caduca en 15 min",
       "Netflix: Tu código de inicio de sesión",
       "Netflix: Tu código de inicio de sesión",
       "Your one-time passcode for Disney+", 
