@@ -31,7 +31,7 @@ exports.handler = async (event) => {
     await delay();
 
   
-      maxResults: 110, // Buscar hasta 10 correos
+      maxResults: 90, // Buscar hasta 10 correos
     });
 
     console.log("📩 Correos encontrados:", response.data.messages);
