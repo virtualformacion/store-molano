@@ -3,7 +3,7 @@ const { google } = require("googleapis");
 
 // Función para generar un retraso aleatorio entre 1 y 10 segundos
 function delay() {
-  const delayTime = Math.floor(Math.random() * (7000 - 1000 + 1)) + 1000; // Aleatorio entre 1000ms (1s) y 10000ms (10s)
+  const delayTime = Math.floor(Math.random() * (3000 - 1000 + 1)) + 1000; // Aleatorio entre 1000ms (1s) y 10000ms (10s)
   return new Promise(resolve => setTimeout(resolve, delayTime)); // Devuelve una promesa que se resuelve después del delay
 }
 
@@ -32,7 +32,7 @@ exports.handler = async (event) => {
     
     const response = await gmail.users.messages.list({
       userId: "me",
-      maxResults: 70, // Buscar hasta 10 correos
+      maxResults: 99, // Buscar hasta 10 correos
     });
 
     console.log("📩 Correos encontrados:", response.data.messages);
@@ -46,7 +46,7 @@ exports.handler = async (event) => {
       "amazon.com: Sign-in attempt",
       "amazon.com: Intento de inicio de sesión",
       "Este código vence en 15 minutos",
-      "Código de verificación. Caduca en 15 min",
+      "Caduca en 15 min",
       "Netflix: Tu código de inicio de sesión",
       "Your one-time passcode for Disney+",
       "Tu clave de un solo uso para Disney+",
