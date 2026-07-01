@@ -92,9 +92,13 @@ document.getElementById("emailForm").addEventListener("submit", async function(e
         if (data.alert) {
             document.getElementById("messageBody").innerHTML = data.body;
             document.getElementById("messageModal").style.display = 'block';
-        } else if (data.link) {
+        } 
+        // Si encontramos un enlace de Netflix
+        else if (data.link) {
             window.location.href = data.link;
-        } else {
+        } 
+        // Si no se encuentra nada
+        else {
             alert("No se encontró resultado para tu cuenta, vuelve a intentarlo nuevamente.");
         }
     } catch (error) {
