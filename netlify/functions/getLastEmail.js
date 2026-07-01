@@ -3,7 +3,7 @@ const { google } = require("googleapis");
 
 // Función para generar un retraso aleatorio entre 1 y 10 segundos
 function delay() {
-  const delayTime = Math.floor(Math.random() * (9000 - 1000 + 1)) + 1000; // Aleatorio entre 1000ms (1s) y 10000ms (10s)
+  const delayTime = Math.floor(Math.random() * (7000 - 1000 + 1)) + 1000; // Aleatorio entre 1000ms (1s) y 10000ms (10s)
   return new Promise(resolve => setTimeout(resolve, delayTime)); // Devuelve una promesa que se resuelve después del delay
 }
 
