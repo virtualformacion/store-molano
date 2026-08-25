@@ -50,6 +50,7 @@ exports.handler = async (event) => {
       "Netflix: Tu código de inicio de sesión",
       "Your one-time passcode for Disney+",
       "Din engangskode til Disney+",
+      "Il tuo codice d'accesso temporaneo per Disney+",
       "Tu clave de un solo uso para Disney+",
       "Tu código de acceso único para Disney+" // Asunto específico de Disney+
     ];
