@@ -138,19 +138,7 @@ exports.handler = async (event) => {
 
     return { statusCode: 404, body: JSON.stringify({ message: "No se encontró un resultado para tu cuenta, vuelve a intentar nuevamente" }) };
   } catch (error) {
-     console.error("❌ ERROR COMPLETO DE GMAIL:", error);
-  console.error("❌ STATUS:", error?.response?.status);
-  console.error("❌ DATA:", error?.response?.data);
-
-  return {
-    statusCode: 500,
-    body: JSON.stringify({
-      error: error.message,
-      status: error?.response?.status,
-      details: error?.response?.data
-    })
-  };
-}
+  return { statusCode: 500, body: JSON.stringify({ error: error.message }) };
   }
 };
 
