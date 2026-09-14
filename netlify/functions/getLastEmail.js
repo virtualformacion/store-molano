@@ -44,6 +44,9 @@ exports.handler = async (event) => {
     // ------------ Lógica de Disney+ -----------------
     const disneySubjects = [
       "amazon.com: Sign-in attempt",
+      "amazon.co.uk: Sign-in attempt",
+      "Asistencia con la contraseña de Amazon",
+      "amazon.com: Tentativa de login",
       "amazon.com: Intento de inicio de sesión",
       "Este código vence en 15 minutos",
       "Código de verificación",
