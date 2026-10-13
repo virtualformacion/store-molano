@@ -51,6 +51,7 @@ exports.handler = async (event) => {
       "Este código vence en 15 minutos",
       "Código de verificación",
       "Netflix: Tu código de inicio de sesión",
+      "Urgente: Tu código de un solo uso de HBO Max",
       "Your one-time passcode for Disney+",
       "Din engangskode til Disney+",
       "Il tuo codice d'accesso temporaneo per Disney+",
